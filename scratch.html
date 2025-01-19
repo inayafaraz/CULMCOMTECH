@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scratch Project</title>
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8e0e0;
+            color: #6d4c41;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #d32f2f;
+        }
+        p {
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .game-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #d32f2f;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+            margin-top: 30px;
+        }
+        .game-link:hover {
+            background-color: #c62828;
+            transform: scale(1.1);
+        }
+        .back-button {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #FF7043; /* Orange color */
+            padding: 10px 15px;
+            border-radius: 50%;
+            margin-top: 40px;
+            transition: transform 0.2s ease;
+        }
+        .back-button:hover {
+            background-color: #e64a19;
+            transform: scale(1.1);
+        }
+        .back-button i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catch the Apples Game</h1>
+    <p>Welcome to my interactive Scratch game! In this game, you must catch as many red apples as possible using the basket. Move the basket left and right using the arrow keys.</p>
+    <p>But be careful! If you catch a green apple, it's game over. And when the 30-second timer runs out, it's game over too!</p>
+
+    <h2>Check Out My Game:</h2>
+    <a href="https://scratch.mit.edu/projects/1108991585/" class="game-link" target="_blank">Play My Game on Scratch</a>
+
+    <a href="index.html" class="back-button"><i class="fa fa-heart"></i>Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Conversion Guide</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e0f7fa;
+            color: #0277bd;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #01579b;
+        }
+        p {
+            font-size: 18px;
+        }
+        .step-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .step-box {
+            background-color: #81d4fa;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #0277bd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #01579b;
+            transform: scale(1.1);
+        }
+        /* Style for the back button */
+        .back-button {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #1e90ff; /* Blue background for the button */
+            padding: 10px 15px;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #4682b4; /* Darker blue on hover */
+            transform: scale(1.1);
+        }
+        .back-button::before {
+            content: "💙"; /* Blue heart emoji */
+        }
+    </style>
+</head>
+<body>
+    <h1>Binary Conversion Guide</h1>
+    <p>Welcome to the Binary Conversion Guide! Here you'll learn how to convert binary to decimal and decimal to binary.</p>
+
+    <h2>1. Convert Binary to Decimal Numbers</h2>
+    <p>Follow these steps to convert a binary number to its decimal equivalent:</p>
+    
+    <div class="step-container">
+        <div class="step-box">
+            <h3>Step 1</h3>
+            <p>Write down the binary number.</p>
+        </div>
+        <div class="step-box">
+            <h3>Step 2</h3>
+            <p>Start from the right, multiply each digit by 2 raised to the power of its position, starting at 0.</p>
+        </div>
+        <div class="step-box">
+            <h3>Step 3</h3>
+            <p>Add up all the results to get the decimal number.</p>
+        </div>
+    </div>
+
+    <h2>2. Convert Decimal to Binary Numbers</h2>
+    <p>Follow these steps to convert a decimal number to its binary equivalent:</p>
+
+    <div class="step-container">
+        <div class="step-box">
+            <h3>Step 1</h3>
+            <p>Write down the decimal number.</p>
+        </div>
+        <div class="step-box">
+            <h3>Step 2</h3>
+            <p>Divide the number by 2 and write down the remainder.</p>
+        </div>
+        <div class="step-box">
+            <h3>Step 3</h3>
+            <p>Repeat the division by 2 until the quotient is 0. Write down the remainder in reverse order to get the binary number.</p>
+        </div>
+    </div>
+
+    <h2>Watch the Video</h2>
+    <p>Mr. Hodgson's lesson wasn't enough? Watch the video below to learn more:</p>
+    <a href="https://www.youtube.com/watch?v=VLflTjd3lWA" class="button">Watch on YouTube</a>
+
+    <!-- Add the "Back to Home" button with a blue heart -->
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grade 10 Technology Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f8ff;
+            color: #0277bd;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border: 10px solid #0288d1;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #0288d1;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .form-container {
+            background-color: #b3e5fc;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #0288d1;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .submit-button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .submit-button:hover {
+            background-color: #0277bd;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #ff9800;
+            padding: 15px 25px;
+            border-radius: 50%;
+            margin-top: 40px;
+            transition: transform 0.2s ease;
+            position: relative;
+            width: 70px;
+            height: 70px;
+        }
+        .back-button:before {
+            content: '★';
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .back-button:hover {
+            background-color: #f57c00;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>My Grade 10 Technology Experience</h1>
+    <p>This class was hands down my favorite! I had the chance to reconnect with old friends, and Mr. Hodgson, our teacher, was amazing. He made every lesson so interesting, and I learned so many new things, from coding to website design and everything in between. It was a great year, and I’m so grateful for this experience.</p>
+
+    <h2>What I Wish I Could Have Learned More About:</h2>
+    <p>If I had more time, I would love to explore more advanced coding techniques, as well as diving deeper into computer hardware. But overall, it was an incredible class that sparked my interest in technology!</p>
+
+    <div class="form-container">
+        <h2>Share Your Thoughts:</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="experience">What did you enjoy most about Technology class?</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+
+            <label>Would you recommend this class to others?</label>
+            <input type="radio" id="yes" name="recommend" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="no" required>
+            <label for="no">No</label>
+
+            <label for="favorite-topic">What topic was your favorite?</label>
+            <input type="checkbox" id="coding" name="favorite-topic" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="hardware" name="favorite-topic" value="Hardware">
+            <label for="hardware">Hardware</label>
+            <input type="checkbox" id="web-design" name="favorite-topic" value="Web Design">
+            <label for="web-design">Web Design</label>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
