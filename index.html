@@ -7,33 +7,102 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background: linear-gradient(to bottom, #add8e6, #f0f8ff);
             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            padding: 20px 0;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header p {
+            font-size: 16px;
+            margin: 5px 0;
         }
         nav {
-            margin: 20px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-        a {
+        nav a {
             margin: 10px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
-            padding: 10px 15px;
-            background-color: #add8e6;
-            border-radius: 5px;
+            padding: 12px 20px;
+            background-color: #87cefa;
+            border: 2px solid #4682b4;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
-        a:hover {
-            background-color: #87ceeb;
-            color: #fff;
+        nav a:hover {
+            background-color: #4682b4;
+            color: white;
+            transform: scale(1.1);
+        }
+        nav a:focus {
+            outline: 3px dashed #4682b4;
+        }
+        img {
+            width: 60%;
+            border: 5px solid #87cefa;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        section {
+            margin: 20px;
+        }
+        section p {
+            font-size: 18px;
+            color: #333;
+        }
+        section p.underline {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #4682b4;
+        }
+        footer {
+            background-color: #87cefa;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-shadow: 1px 1px 2px #ffffff;
+        }
+        footer a {
+            color: #4682b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Update the image path to the relative path -->
-    <img src="images/homepagepic.jpg" alt="homepagepic.jpg"" style="width: 50%; margin-bottom: 20px;">
-    <i><h1>Welcome to My Grade 10 Technology Website</h1></i>
-    <p>Everything we did in TEJ201.2</p>
-    <p>Inaya F</p>
+    <header>
+        <h1>Welcome to My Grade 10 Technology Website</h1>
+        <p>Explore everything I’ve done in TEJ201.2</p>
+    </header>
+
+    <img src="images/homepagepic.jpg" alt="Grade 10 Technology">
+    
+    <section>
+        <p class="underline">Check out the different topics I’ve explored:</p>
+    </section>
+
     <nav>
         <a href="society.html">Computers and Society</a>
         <a href="environmental.html">Impact on Environment</a>
@@ -42,5 +111,9 @@
         <a href="scratch.html">Scratch Project</a>
         <a href="reflection.html">Reflection</a>
     </nav>
+
+    <footer>
+        <p>Created by <strong>Inaya F</strong>. For questions or feedback, <a href="mailto:inayaf@example.com">email me!</a></p>
+    </footer>
 </body>
 </html>
