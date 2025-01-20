@@ -44,35 +44,54 @@
         a::before {
             content: "❤️ ";
         }
-        .bottom-image {
-            margin-top: 30px;
-        }
         img {
-            width: 60%;
-            max-width: 500px;
-            height: auto;
+            width: 50%;
+            margin-top: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        #contents {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .bookmark-link {
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .bookmark-link:hover {
+            color: #004d40;
         }
     </style>
 </head>
 <body>
     <h1>Impact of Computer Use on the Environment</h1>
-    <p>Here are some positive and negative effects:</p>
+    <p><strong>Quick Navigation:</strong></p>
+    <div id="contents">
+        <ul>
+            <li><a class="bookmark-link" href="#positive-effects">Positive Effects</a></li>
+            <li><a class="bookmark-link" href="#negative-effects">Negative Effects</a></li>
+            <li><a class="bookmark-link" href="#solutions">Solutions</a></li>
+        </ul>
+    </div>
+    <h2 id="positive-effects">Positive Effects</h2>
     <ul>
-        <li><strong>Positive:</strong> Reduced paper waste, smarter resource management.</li>
-        <li><strong>Negative:</strong> E-waste, energy consumption.</li>
+        <li>Reduced paper waste.</li>
+        <li>Smarter resource management.</li>
     </ul>
-    <p>Technology can improve the environment through:</p>
+    <h2 id="negative-effects">Negative Effects</h2>
+    <ul>
+        <li>E-waste.</li>
+        <li>Energy consumption.</li>
+    </ul>
+    <h2 id="solutions">Solutions</h2>
     <ul>
         <li>Better recycling programs.</li>
         <li>Energy-efficient devices.</li>
     </ul>
     <p>Government agencies and partners working on solutions include EPA and local recycling centers.</p>
+    <img src="images/computersenvironment.jpg" alt="Computers and Environment">
     <a href="index.html">Back to Home</a>
-
-    <div class="bottom-image">
-        <img src="images/computersenvironment.jpg" alt="computersenvironment.jpg">
-    </div>
 </body>
 </html>
